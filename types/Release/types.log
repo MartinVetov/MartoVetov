@@ -1,0 +1,6 @@
+﻿  Source.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 5 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+C:\Users\Martin Vetov\Desktop\C++\types\types\Source.cpp(11): error C4700: uninitialized local variable 'z' used
+LINK : fatal error LNK1257: code generation failed
