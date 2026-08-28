@@ -72,11 +72,25 @@ npm run build      # или: npm run dev — за разработка
 php artisan serve
 ```
 
-Опашката обработва имейлите към доставчиците и администратора:
+### Стартиране
 
 ```bash
-php artisan queue:work
+composer dev
 ```
+
+Пуска едновременно сървъра, обработката на опашката и Vite. Отвори http://localhost:8000.
+
+Или всяко поотделно:
+
+```bash
+php artisan serve       # уеб сървър
+php artisan queue:work  # имейли към доставчиците и администратора
+npm run dev             # компилиране на стиловете с hot reload
+```
+
+За следене на логовете в реално време: `composer logs`
+(изисква разширението `pcntl`, което липсва на Windows — там чети
+`storage/logs/laravel.log` направо).
 
 ---
 
