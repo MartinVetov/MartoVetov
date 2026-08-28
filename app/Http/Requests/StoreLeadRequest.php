@@ -40,6 +40,7 @@ class StoreLeadRequest extends FormRequest
                 'image',
                 'mimes:'.implode(',', $uploads['mimes']),
                 'max:'.$uploads['max_size_kb'],
+                'dimensions:max_width=10000,max_height=10000',
             ],
 
             // Стъпка 3 — локация

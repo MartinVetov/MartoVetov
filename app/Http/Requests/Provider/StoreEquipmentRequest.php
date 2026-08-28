@@ -34,6 +34,7 @@ class StoreEquipmentRequest extends FormRequest
                 'image',
                 'mimes:'.implode(',', config('nt.uploads.mimes')),
                 'max:'.config('nt.uploads.max_size_kb'),
+                'dimensions:max_width=10000,max_height=10000',
             ],
         ];
     }
